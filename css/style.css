@@ -15,7 +15,7 @@ caption{
   transition: top 1s ease-out;
   z-index: 1;
   position: relative;
-  bottom: 40px;
+  bottom: 70px;
 }
 
 body{
@@ -113,6 +113,7 @@ header{
   background-image: url("../images/galaxy.jpg");
   background-repeat: no-repeat;
   margin-bottom: 10px;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 #clawscontainer {
@@ -132,6 +133,14 @@ header{
   display: flex;
   flex-wrap: wrap;
   padding: 5px;
+}
+
+.communityimages {
+  text-align: center;
+}
+
+.communityimage {
+  border: 2px solid #4881ea;
 }
 
 footer{
@@ -155,4 +164,13 @@ footer{
   nav{
     text-align: right;
   }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .claws {
+    background-image: url("../images/galaxy.jpg");
+    background-repeat: no-repeat;
+    margin-bottom: 10px;
+  }
+
 }
