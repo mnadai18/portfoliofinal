@@ -1,0 +1,158 @@
+main {
+  margin-bottom: 50px;
+}
+
+caption{
+  margin:5px 0px;
+}
+
+.skip a{
+  background: white;
+  color: black;
+  left: 0;
+  padding: 6px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+  position: relative;
+  bottom: 40px;
+}
+
+body{
+  color: #000000;
+  font-size: 16px;
+  margin: 1.2em;
+  background-size: cover ;
+  background-position: center;
+  font-family: 'Open Sans', sans-serif;
+  background-color:#DDDDDD;
+  background-repeat: no-repeat;
+}
+
+
+p{
+  padding-top: 15px;
+}
+
+a{
+  font-size: 16px;
+  color: #4881ea;
+}
+
+
+h1{
+  font-size: 50px;
+  line-height: 1;
+  padding: 50px 0;
+  text-align: center;
+}
+
+h2{
+  font-size: 32px;
+  line-height: 1.5;
+}
+
+nav ul{
+  list-style-type: none;
+}
+
+nav li{
+  display: inline;
+  padding-right: 20px;
+}
+
+nav{
+  background-color: black;
+  padding: 25px;    
+  text-align: center;   
+}
+
+header p{
+  color: white;
+  font-size: 24px;
+  padding: 0 100px;
+  text-align: center;
+}
+
+
+nav a{
+  color: white;
+  font-weight: bold;
+}
+
+#currentlink {
+  color:#4881ea;
+  text-decoration-style: dotted;
+}
+
+.skip a:focus {
+  position: relative;
+  bottom: 0px;
+}
+
+.text {
+  background-color: white;
+  padding: 15px;
+  margin: 15px;
+
+}
+
+
+header{
+  color: white;
+  background-color: #4881ea;
+  min-height: 400px;
+}
+
+.claws {
+  background-attachment: fixed; /* Parallax effect */
+  background-position: center; /* Parallax effect */
+  background-size: cover; /* Parallax effect */
+  color: white;
+  min-height: 400px; /* Parallax effect */
+  background-image: url("../images/galaxy.jpg");
+  background-repeat: no-repeat;
+  margin-bottom: 10px;
+}
+
+#clawscontainer {
+  display:grid;
+  grid-template:  500px / 1fr;
+}
+
+.astronaut-image > img {
+  width: 100%;
+}
+
+.research-image > img {
+  width: 100%;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+}
+
+footer{
+  width:100%;
+  background:#000000;
+  text-align:center;
+  color: #FFFFFF;
+  min-height:75px;
+  bottom: 0px;
+  left:0px;
+  right: 0px;
+}
+
+@media screen and (min-width: 768px){
+  .clawscontainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 500px 500px 500px;
+  }
+
+  nav{
+    text-align: right;
+  }
+}
