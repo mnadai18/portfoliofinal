@@ -179,6 +179,11 @@ header{
   height:300px;
 }
 
+.communityimage {
+  border: 2px solid #4881ea;
+  width: 300px;
+  height:180px;
+}
 
 form {
   border: 3px solid #f1f1f1;
@@ -271,6 +276,11 @@ footer{
   nav{
     text-align: right;
   }
+  .communityimage {
+    border: 2px solid #4881ea;
+    width: 400px;
+    height:240px;
+  }
 
 }
 
@@ -328,5 +338,10 @@ footer{
   footer {
     font-size: 24px;
 
+  }
+  .communityimage {
+    border: 2px solid #4881ea;
+    width: 500px;
+    height:300px;
   }
 }
