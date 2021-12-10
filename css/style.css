@@ -118,15 +118,45 @@ header{
   background-image: url("../images/galaxy.jpg");
   background-repeat: no-repeat;
   margin-bottom: 10px;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 }
-
 #clawscontainer {
-  display:grid;
-  grid-template:  500px / 1fr;
+  display: grid;
+  grid-template: auto/ auto auto auto auto auto auto;
 }
 
+.astronaut-image{
+  grid-column: 1 /span 1;
+  grid-row: 1/ span 1;
+}
 
+#about{
+  grid-column: 1 /span 1;
+  grid-row: 2/span 1;
+}
+
+#tech {
+  grid-column: 1/span 1;
+  grid-row: 4/ span 1;
+}
+.tech-image {
+  grid-column: 1/ span 1;
+  grid-row: 3/ span 1;
+}
+#role {
+  grid-column: 1/ span 1;
+  grid-row: 6/ span 1;
+
+}
+.research-image {
+  grid-column: 1/ span 1;
+  grid-row: 5/ span 1;
+}
+
+.astronaut-image > img {
+  width:100%;
+  overflow:hidden;
+}
 
 .research-image > img {
   width: 100%;
@@ -190,7 +220,16 @@ button:hover {
   padding: 16px;
 }
 
-
+#aboutmecontainer {
+  display:grid;
+  grid-template-rows: auto auto auto auto;
+  grid-template-columns: auto;
+  grid-row-gap: 15px;
+}
+#aboutmesec{
+  grid-column: 1/span 1;
+  grid-row: 1/span1;
+}
 
 footer{
   width:100%;
@@ -204,10 +243,66 @@ footer{
 }
 
 @media screen and (min-width: 768px){
-  .clawscontainer{
+  #clawscontainer{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 500px 500px 500px;
+  }
+  .astronaut-image{
+    grid-column: 1 /span 3;
+    grid-row: 1/ span 1;
+  
+  }
+
+  #about{
+    grid-column: -1 /span 1;
+    grid-row: 1/span 1;
+  }
+
+  #tech {
+    grid-column: 1/span 1;
+    grid-row: 2/ span 1;
+  }
+  .tech-image {
+    grid-column: 1/ span 3;
+    grid-row: 2/ span 1;
+  }
+  #role {
+    grid-column: 1/ span 1;
+    grid-row: 3/ span 1;
+
+  }
+  .research-image {
+    grid-column: 1/ span 3;
+    grid-row: 3/ span 1;
+  }
+
+  .astronaut-image > img {
+    width:100%;
+    overflow:hidden;
+  }
+
+  #aboutmecontainer {
+    display:grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto;
+    grid-row-gap: 15px;
+  }
+  #aboutmesec{
+    grid-column: 1/span 1;
+    grid-row: 1/span1;
+  }
+  #experience{
+    grid-column: 1/span 1;
+    grid-row: 1/span1;
+  }
+  #hobbies{
+    grid-column: 1/span 1;
+    grid-row: 1/span1;
+  }
+  #intro{
+    grid-column: 1/span 1;
+    grid-row: 1/span1;
   }
 
   nav{
@@ -244,5 +339,26 @@ footer{
 }
 
 @media screen and (min-width: 992px){
-  
+  #aboutmecontainer {
+    display:grid;
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: auto auto auto;
+    grid-row-gap: 15px;
+  }
+  #aboutsec{
+    grid-column: 1/span 2;
+    grid-row: 1/span 1;
+  }
+  #experience {
+    grid-column: 2/span 2;
+    grid-row: 2/span 1;
+  }
+  #hobbies {
+    grid-column: 1/span 2;
+    grid-row: 3/span 1;
+  }
+  #intro{
+    grid-column: 2/span 2;
+    grid-row: 4/span 1;
+  }
 }
