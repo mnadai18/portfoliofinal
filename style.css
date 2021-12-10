@@ -122,7 +122,8 @@ header{
 }
 #clawscontainer {
   display: grid;
-  grid-template: auto/ auto auto auto auto auto auto;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto auto auto auto;
 }
 
 .astronaut-image{
@@ -243,44 +244,7 @@ footer{
 }
 
 @media screen and (min-width: 768px){
-  #clawscontainer{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 500px 500px 500px;
-  }
-  .astronaut-image{
-    grid-column: 1 /span 3;
-    grid-row: 1/ span 1;
-  
-  }
-
-  #about{
-    grid-column: -1 /span 1;
-    grid-row: 1/span 1;
-  }
-
-  #tech {
-    grid-column: 1/span 1;
-    grid-row: 2/ span 1;
-  }
-  .tech-image {
-    grid-column: 1/ span 3;
-    grid-row: 2/ span 1;
-  }
-  #role {
-    grid-column: 1/ span 1;
-    grid-row: 3/ span 1;
-
-  }
-  .research-image {
-    grid-column: 1/ span 3;
-    grid-row: 3/ span 1;
-  }
-
-  .astronaut-image > img {
-    width:100%;
-    overflow:hidden;
-  }
+ 
 
   #aboutmecontainer {
     display:grid;
@@ -304,10 +268,10 @@ footer{
     grid-column: 1/span 1;
     grid-row: 1/span1;
   }
-
   nav{
     text-align: right;
   }
+
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -360,5 +324,9 @@ footer{
   #intro{
     grid-column: 2/span 2;
     grid-row: 4/span 1;
+  }
+  footer {
+    font-size: 24px;
+
   }
 }
